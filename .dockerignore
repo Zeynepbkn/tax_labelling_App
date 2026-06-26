@@ -1,0 +1,15 @@
+backend/.env
+backend/.venv
+backend/backups
+backend/**/__pycache__
+backend/**/*.pyc
+
+frontend/node_modules
+frontend/dist
+
+ozelge_veri.json
+labelled_questions.json
+
+.git
+*.log
+*.dump

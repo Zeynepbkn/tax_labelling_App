@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: taxlabeltr-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "1440"
+      - key: QUIZ_PASSING_SCORE
+        value: "80"
+      - key: JSON_UPLOAD_MAX_MB
+        value: "350"
+      - key: CORS_ORIGINS
+        sync: false

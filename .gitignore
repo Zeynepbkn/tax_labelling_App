@@ -1,0 +1,27 @@
+# === Sırlar / ortam dosyaları (ASLA gönderilmez) ===
+.env
+*.env
+!*.env.example
+!*.env.neon.example
+backend/.env
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+backend/.venv/
+backend/backups/
+
+# === Node / frontend ===
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# === Büyük veri dökümleri (kod değil; GitHub 100MB sınırını aşar) ===
+ozelge_veri.json
+labelled_questions.json
+*.dump
+*.log
